@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Madalin Naum</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<img src="img/utm.png" alt="utm" class="logo" width="120">
+			<nav>
+				<ul>
+					<li><a href="index.html">Acasa</a></li>
+					<li><a href="#orar">Orar</a></li>
+					<li><a href="https://www.utm.ro/comunicate-de-presa/">Comunicate</a></li>
+                    <li><a href="https://www.utm.ro/contact/">Contact</a></li>                 
+				</ul>
+			</nav>
+            <button id="change_theme">Schimba tema</button>
+		</div>
+	</header><!--  End of Header  -->
+
+	<section class="hero_banner"></section><!--  End of Hero Banner  -->
+
+	<section class="content">
+
+		<div class="wrapper">
+				<div class="left">
+					<div class="side_bar">
+						<h3 class="font-style-left">Discipline de studiu</h3>
+						<ol>
+                        	<li><a href="pdf/Algoritmica grafurilor.pdf" target="blank">Algoritmica grafurilor</a></li>
+                            <li><a href="pdf/Analiza numerica -suport de curs - an I ID, 2016-2017.pdf" target="blank">Calcul numeric</a></li>
+							<li><a href="pdf/98-375-HTML5-SSG-Withcrop.pdf" target="blank">Dez. aplicațiilor web</a></li>
+							<li><a href="pdf/Fundamentele algebrice ale  informaticii.pdf" target="blank">Fundamentele alg. ale inf.</a></li>
+							<li><a href="pdf/MODULUL 1.pdf" target="blank">Programare procedurală</a></li>
+                        </ol>
+					</div>
+				</div>
+				<div class="right">
+					<div class="details_exp">
+						<h3>Facultatea de Informatica</h3>
+						<p>Viitorul se prezintă excelent pentru specialiştii IT, începând cu funcţiile executive şi terminând cu cele de conducere. Tehnologia este în plin avânt, companiile de Internet se dezvoltă expansiv şi automatizarea pătrunde la nivelul tuturor sistemelor. Companiile existente își creează Website-uri şi dezvoltă strategii Web în timp ce caută modalităţi de a-şi reduce costurile prin automatizare. Un număr mare de specialişti IT va fi necesar pentru întreținerea sistemelor, îmbunătăţirea reţelelor existente, implementarea de noi strategii, maximizarea conexiunilor la nivel global.</p>
+						<p>Facultatea de Informatică pregătește specialişti în informatică şi tehnologia informaţiei care pot ocupa o gamă largă de locuri de muncă: programatori de aplicaţii software, proiectanţi de site-uri WEB, proiectanţi de sisteme de calcul și servicii de reţea, informaticieni în institute de cercetare, întreprinderi, administraţie, birouri de creaţie multimedia, consultanţa, profesori de informatică, cercetători în informatică, administratori de reţele de calculatoare, administratori de baze de date. <a href="http://www.utm.ro/facultatea-de-informatica-2/despre-noi-facultatea-de-informatica/" class="more">... citeste mai mult</a></p>
+						<p id="orar"><a href="pdf/Orar_Informatica_an_I_ID_2018_2019_semestrul_II.pdf" target="blank">PLANIFICAREA ACTIVITĂȚILOR TUTORIALE - Anul I ID</a></p>
+                    </div>
+				</div>
+			</div>
+            <div class="clear"></div>
+            
+
+	</section><!--  End of Content  -->
+
+
+	<footer>
+		<img src="img/utm.png" alt="Crafty" width="60px">
+		<p class="quote"><i>" Mater virtutum ratio - Menus agitat molem"</i></a></p>
+	</footer><!--  End of Footer  -->
+
+</body>
+</html>
+
+<script>
+$('#change_theme').click(function() {
+		$('header, .font-style-left, .content, footer, header nav ul li a, .right h3, .more, #orar a, .quote, .content .left li a').toggleClass('dark_theme');
+});
+</script>
